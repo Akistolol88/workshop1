@@ -8,5 +8,9 @@ let g=7;
 let h=8;
 let i=9;
     let j=10;
-
+function hello() {
+    if (true) {
+        console.log("Hello World")
+    }
+}
 console.log(a+b+c+d+e+f+g+h+i+j);
