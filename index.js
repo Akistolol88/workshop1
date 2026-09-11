@@ -20,8 +20,7 @@ function findMaxIndentation(content) {
     const trimmedRow = row.trim();
 
     if (trimmedRow.length > 0) {
-      const currentIndentation = row.match(/^\s*/)[0].length / 4;
-
+      const currentIndentation = Math.floor(row.match(/^\s*/)[0].length / 4);
       if (currentIndentation > maxIndentation) {
         maxIndentation = currentIndentation;
       }
